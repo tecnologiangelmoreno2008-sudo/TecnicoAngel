@@ -13,64 +13,53 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
-            <img src="imgA/Logo.png" alt="logo" width="90">
+            <img src="imgA/Logo.png" alt="logo" width="90" class="me-2">
             <a class="navbar-brand fw-bold" href="index.html">TecnicoAngel</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="Manual de Convivencia.html">Manual de
-                            Convivencia</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link active" href="Servicio.html">Servicio</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="Producto.html">Producto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Manual de Convivencia.html">Manual de Convivencia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Servicio.html">Servicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Producto.html">Producto</a></li>
                     <li class="nav-item"><a class="nav-link active" href="contactos.html">Contactos</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="Cableado Estructurado RED.html">Cableado
-                            Estructurado RED</a></li>
-                    <li class="nav-item"><a class="nav-link active"
-                            href="Formulario para el cliente realice su pago .html">Formulario de Pago</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="Cableado Estructurado RED.html">Cableado Estructurado RED</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Formulario para el cliente realice su pago .html">Formulario de Pago</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="container d-flex flex-column align-items-center justify-center" style="min-height: 80vh;">
-        <h1 class="T_01">Contacto</h1>
+    <main class="container py-4 d-flex flex-column align-items-center justify-content-center" style="min-height: 80vh;">
+        <section class="page-shell p-4 w-100" style="max-width: 580px;">
+            <h1 class="T_01 text-center">Contacto</h1>
 
-        <form id="formulario" class="w-100"
-            style="max-width: 500px; margin-top:20px; display:flex; flex-direction:column; gap:15px;">
-
-            <div class="input-group">
-                <span class="input-group-text">Nombre</span>
-                <input type="text" id="nombre" class="form-control">
-            </div>
-
-            <div class="input-group">
-                <span class="input-group-text">Email</span>
-                <input type="text" id="email" class="form-control">
-            </div>
-
-            <div class="input-group">
-                <span class="input-group-text">Telefono</span>
-                <input type="text" id="telefono" class="form-control">
-            </div>
-
-            <div class="input-group">
-                <span class="input-group-text">Solicitud</span>
-                <input type="text" id="mensaje" class="form-control">
-            </div>
-
-            <div class="input-group">
-                <span class="input-group-text">Fecha</span>
-                <input type="date" id="fecha" class="form-control">
-            </div>
-
-            <button type="submit" class="btn btn-primary">Enviar</button>
-
-        </form>
-    </div>
+            <form id="formulario" class="w-100 mt-3 d-flex flex-column gap-3">
+                <div class="input-group">
+                    <span class="input-group-text">Nombre</span>
+                    <input type="text" id="nombre" class="form-control">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-text">Email</span>
+                    <input type="text" id="email" class="form-control">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-text">Telefono</span>
+                    <input type="text" id="telefono" class="form-control">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-text">Solicitud</span>
+                    <input type="text" id="mensaje" class="form-control">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-text">Fecha</span>
+                    <input type="date" id="fecha" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </section>
+    </main>
 
     <script>
         document.getElementById("formulario").addEventListener("submit", function (e) {
